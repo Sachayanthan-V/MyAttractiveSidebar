@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,body {
+    height: 100%;
+    background-color: #232323;
+}
+
+.header { 
+    width: 100%;
+    background-color: #232323;
+    height: 10vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    position: fixed;
+    
+}
+
+.header:hover { 
+
+    background-color: #696969;
+    color: bisque;
+    -webkit-box-shadow: 0 4px 16px rgba(255,255,0,1);
+    -moz-box-shadow: 0 4px 16px rgba(255,255,0,1);
+    -ms-box-shadow: 0 4px 16px rgba(255,255,0,1);
+    box-shadow: 0 4px 16px rgba(255,255,0,1);
+    -webkit-outline: 1px solid rgba(255,255,0,1);
+
+}
+
+.flexSidbarAndContent {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 0;
+}
+
+    .sidebar {
+        /* background-color: #691423; */
+        
+        width: 40vh;
+        height: 90vh;
+        bottom: 0;
+        margin-left: -30vh;
+        transition: all .5s ease;
+        position: fixed;
+
+    }
+
+    .sidebar:hover {
+        margin-left: 0;
+    }
+
+        .sidebar ul{
+            line-height: 8vh;
+        }
+
+            .sidebar ul a{
+                display: flex;
+                color: white;
+                box-sizing: border-box;
+                border: 1px #232323 solid;
+                text-decoration: none;
+                list-style-type: none;
+            }
+
+            .sidebar ul a:hover {
+                background-color: #856c6c;
+                color: greenyellow;
+                border: 1px solid #dddddd;
+                -webkit-box-shadow: 0 4px 16px rgb(255, 0, 0,1);
+                -moz-box-shadow: 0 4px 16px rgba(255,0,0,1);
+                -ms-box-shadow: 0 4px 16px rgba(255,0,0,1);
+                box-shadow: 0 4px 16px rgba(255,0,0,1);
+                -webkit-outline:1px solid rgba(255,0,0,1);
+            }
+
+                .sidebar ul a li {
+                    margin-left: 7vh;
+                }
+
+
+.AboutAuthor {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 25%;
+    left: 25%;
+    /* background-color: black; */
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    opacity: 1;
+}
+
+
+.heading{
+    background: repeating-linear-gradient(-45deg, red 0%, yellow 7.14%, 
+                rgb(0,255,0) 14.28%, rgb(0,255,255) 21.4%, cyan 28.56%,
+                blue 35.7%, magenta 42.84%, red 50%);
+    background-size: 360vw 360vw;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: slide 5s linear infinite forwards;
+    text-align: center;
+    font-size: 40px;
+}
+
+.AboutAuthor h2 {
+    margin-top: 10px;
+    line-height: 0.8cm;
+    margin-bottom: 10px;
+    font-size: 25px;
+    background: repeating-linear-gradient(-45deg, red 0%, yellow 7.14%, 
+    rgb(0,255,0) 14.28%, rgb(0,255,255) 21.4%, cyan 28.56%,
+    blue 35.7%, magenta 42.84%, red 50%);
+    background-size: 360vw 360vw;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: slide 5s linear infinite forwards;
+    text-align: center;
+}
+
+.AboutAuthor p {
+    font-size: 20px;
+    text-transform: capitalize;
+    background: repeating-linear-gradient(-45deg, red 0%, yellow 7.14%, 
+            rgb(0,255,0) 14.28%, rgb(0,255,255) 21.4%, cyan 28.56%,
+                blue 35.7%, magenta 42.84%, red 50%);
+    background-size: 360vw 360vw;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: slide 5s linear infinite forwards;
+    text-align: center;
+}
+
+li {
+    background: repeating-linear-gradient(-45deg, red 0%, yellow 7.14%, 
+            rgb(0,255,0) 14.28%, rgb(0,255,255) 21.4%, cyan 28.56%,
+                blue 35.7%, magenta 42.84%, red 50%);
+    background-size: 360vw 360vw;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: slide 5s linear infinite forwards;
+    text-align: center;
+}
+
+.header {
+    background: repeating-linear-gradient(-45deg, red 0%, yellow 7.14%, 
+            rgb(0,255,0) 14.28%, rgb(0,255,255) 21.4%, cyan 28.56%,
+            blue 35.7%, magenta 42.84%, red 50%);
+    background-size: 360vw 360vw;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: slide 5s linear infinite forwards;
+    text-align: center;
+}
+
+@keyframes slide {
+    0% {
+        background-position-x: 0%;
+    }
+    100% {
+        background-position-x: 600vw;
+    }
+}
